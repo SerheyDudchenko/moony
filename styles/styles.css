@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+    font-family: 'Poppins', sans-serif;
+    color: azure;
+    overflow-x: hidden;
+}
+
+.nav-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1em 0;
+    z-index: 1000;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3em;
+}
+
+.logo a{
+    text-decoration: none;
+    color: azure;
+    font-size: large;
+    font-weight: 750;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.breadcrumbs{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.breadcrumbs li a{
+    text-decoration: none;
+    color: azure;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.breadcrumbs li a:hover {
+    background-color: azure;
+    color: #2b1055;
+}
+
+.parallax-scene{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.parallax-scene img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.parallax-scene #mountains_ft{
+    z-index: 10;
+}
+
+.parallax-scene h1{
+    position: absolute;
+    color: azure;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    z-index: 9;
+    right: -350px;
+    text-shadow: 1px -1px 15px #856ab1df ;
+}
+
+.parallax-scene a{
+    text-decoration: none;
+    font-size: 2em;
+    padding: 6px 15px;
+    background: azure;
+    color: #2b1055;
+    border-radius: 20px;
+    z-index: 11;
+}
+
+.moon{
+    mix-blend-mode: screen;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 25px 100px 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    background-color: #1c0522;
+    z-index: 1000;
+}
+
+.about::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 110%;
+    background: linear-gradient(to top,#1c0522, transparent);
+    transform: translateY(-100px);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.article-header{
+    margin: 50px 0 0 0;
+    font-size: 4em;
+}
+
+.article{
+    font-size: 1.1em;
+}
